@@ -19,6 +19,7 @@ class Customer < ActiveRecord::Base
   def self.any_candice
     # YOUR CODE HERE to return all customer(s) whose first name is Candice
     # probably something like:  Customer.where(....)
+    where(first: "Candice")
   end
   def self.with_valid_email
     # YOUR CODE HERE to return only customers with valid email addresses (containing '@')
